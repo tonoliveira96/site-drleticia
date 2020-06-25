@@ -3,28 +3,25 @@ import { shade } from 'polished';
 
 export const Title = styled.h1`
   font-size: 42px;
-  color: #f0f0f5 ;
-  background:  #3a3a3a;
+  color: #f0f0f5;
+  background: #3a3a3a;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
 
   padding-top: 15px;
   padding-left: 30px;
 
-  @media(max-width: 640px){
-      font-size: 24px;
-
+  @media (max-width: 640px) {
+    font-size: 24px;
   }
-
-
 `;
 
 export const HeaderSite = styled.div`
   height: 600px;
-  width:100%;
+  width: 100%;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 
@@ -32,8 +29,8 @@ export const HeaderSite = styled.div`
     padding: 10px;
     text-decoration: none;
     background: #04d361;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     position: absolute;
 
     border-radius: 10px;
@@ -46,75 +43,70 @@ export const HeaderSite = styled.div`
       background: ${shade(0.2, '#04d361')};
     }
 
-    img{
+    img {
       width: 24px;
       height: 24px;
     }
   }
 
-   /* img{
+  /* img{
     max-width:auto;
 	  height:100%s;
 
   }*/
 
- @media (max-width: 640px){
+  @media (max-width: 640px) {
     width: auto;
-	  height:500px;
+    height: 500px;
     padding-bottom: 80px;
 
-    a{
+    a {
       position: fixed;
       bottom: 0;
       margin-bottom: 24px;
     }
-
   }
-
-
 `;
 
 export const Skills = styled.div`
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top:20px;
   background: #fff;
+  margin-top: 20px;
 
-  div{
-    margin: 0 16px;
+    div {
+      margin: 0 16px;
+      flex: 1;
+      padding: 20px 10px 10px 20px;
+
+      strong {
+        justify-content: center;
+        font-size: 16px;
+      }
+
+      img {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+
+      p {
+        margin: 10px;
+        padding: 0 10px 0 0;
+        text-align: justify;
+        font-size: 14px;
+      }
+    }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    display: flex;
     flex: 1;
-    padding: 20px 10px 10px 20px;
-
-    strong{
-      justify-content: center;
-      font-size: 16px;
-    }
-
-    img{
-      width:300px;
-      height: 200px;
-      margin: 10px;
-
-    }
-
-    p{
-      margin: 10px;
-      text-align:justify;
-      font-size: 14px;
-    }
-
   }
-
-@media (max-width: 1080px){
-  flex-direction:column;
-  display: flex;
-  flex:1;
-
-}
 `;
-
 
 export const Contact = styled.div`
   display: flex;
@@ -172,4 +164,3 @@ export const Contact = styled.div`
     }
   }
 `;
-

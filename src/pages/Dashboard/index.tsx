@@ -80,60 +80,61 @@ const Dashboard: React.FC = () => {
       </HeaderSite>
 
       <Skills>
-        <div>
-          <strong>Habilidade</strong>
-          <img
-            src="https://cdn.pixabay.com/photo/2014/12/13/18/27/physiotherapy-567021_960_720.jpg"
-            alt=""
-          />
 
-          <p>
-            Lorem Ipsum é simplesmente um texto fictício da indústria
-            tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão do
-            setor desde os anos 1500, quando uma impressora desconhecida pegou
-            uma galera do tipo e a mexeu para fazer um livro de amostras do
-            tipo.
-          </p>
-        </div>
-        <div>
-          <strong>Habilidade</strong>
-          <img
-            src="https://cdn.pixabay.com/photo/2014/12/13/18/27/physiotherapy-567021_960_720.jpg"
-            alt=""
-          />
+          <div>
+            <strong>Habilidade</strong>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/12/13/18/27/physiotherapy-567021_960_720.jpg"
+              alt=""
+            />
 
-          <p>
-            Lorem Ipsum é simplesmente um texto fictício da indústria
-            tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão do
-            setor desde os anos 1500, quando uma impressora desconhecida pegou
-            uma galera do tipo e a mexeu para fazer um livro de amostras do
-            tipo.
-          </p>
-        </div>
-        <div>
-          <strong>Habilidade</strong>
-          <img
-            src="https://cdn.pixabay.com/photo/2014/12/13/18/27/physiotherapy-567021_960_720.jpg"
-            alt=""
-          />
+            <p>
+              Lorem Ipsum é simplesmente um texto fictício da indústria
+              tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão
+              do setor desde os anos 1500, quando uma impressora desconhecida
+              pegou uma galera do tipo e a mexeu para fazer um livro de amostras
+              do tipo.
+            </p>
+          </div>
 
-          <p>
-            Lorem Ipsum é simplesmente um texto fictício da indústria
-            tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão do
-            setor desde os anos 1500, quando uma impressora desconhecida pegou
-            uma galera do tipo e a mexeu para fazer um livro de amostras do
-            tipo.
-          </p>
-        </div>
+          <div>
+            <strong>Habilidade</strong>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/12/13/18/27/physiotherapy-567021_960_720.jpg"
+              alt=""
+            />
+
+            <p>
+              Lorem Ipsum é simplesmente um texto fictício da indústria
+              tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão
+              do setor desde os anos 1500, quando uma impressora desconhecida
+              pegou uma galera do tipo e a mexeu para fazer um livro de amostras
+              do tipo.
+            </p>
+          </div>
+
+          <div>
+            <strong>Habilidade</strong>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/12/13/18/27/physiotherapy-567021_960_720.jpg"
+              alt=""
+            />
+
+            <p>
+              Lorem Ipsum é simplesmente um texto fictício da indústria
+              tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão
+              do setor desde os anos 1500, quando uma impressora desconhecida
+              pegou uma galera do tipo e a mexeu para fazer um livro de amostras
+              do tipo.
+            </p>
+          </div>
+
       </Skills>
 
-      <Contact>Contato
-        <div>
-
-        </div>
-
+      <Contact>
+        Contato
+        <div></div>
       </Contact>
-
     </>
   );
 };
