@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import api from '../../services/api';
 
 import WhatsappLogo from '../../assets/whatsapp-logo.png';
-import Banner01 from '../../assets/teste.png';
+import Banner01 from '../../assets/image2.png';
 
 import {
   Title,
