@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import Banner01 from '../assets/massage2.jpg';
 export default createGlobalStyle`
   *{
     margin:0;
@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #f0f0f0 no-repeat center top fixed;
+    background: #f0f0f5 /*url({Banner01}) */no-repeat center top fixed;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -18,6 +18,12 @@ export default createGlobalStyle`
 
     #root{
     flex:1;
+
+    div h2{
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+    }
 
   }
 
