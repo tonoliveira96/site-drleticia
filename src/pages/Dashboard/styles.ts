@@ -100,7 +100,6 @@ export const Skills = styled.div`
     margin: 0 16px;
     flex: 1;
     padding: 20px 10px 10px 20px;
-    transition: opacity 0.2;
 
     strong {
       font-size: 16px;
@@ -114,9 +113,6 @@ export const Skills = styled.div`
       height: 200px;
       margin: 10px;
       border-radius: 5px;
-    }
-    &:hover {
-      opacity: 0.9;
     }
 
     p {
