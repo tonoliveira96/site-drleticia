@@ -90,20 +90,17 @@ export const AboutMe = styled.div`
 export const Skills = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  h2 {
-    color: #3a3a3a;
-  }
+  justify-content: space-between;
 
   div {
     margin: 0 16px;
     flex: 1;
-    padding: 20px 10px 10px 20px;
+    padding: 20px 10px 10px 10px;
 
     strong {
       font-size: 16px;
       text-align: center;
+      margin-left: 120px;
     }
 
     img {
@@ -117,7 +114,6 @@ export const Skills = styled.div`
 
     p {
       margin: 10px;
-      padding: 0;
       text-align: justify;
       font-size: 14px;
     }

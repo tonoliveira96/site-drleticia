@@ -22,7 +22,7 @@ export default createGlobalStyle`
     div h2{
       width: 100%;
       text-align: center;
-      padding: 5px 0;
+      padding: 10px 0;
     }
 
   }
