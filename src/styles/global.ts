@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import Banner01 from '../assets/massage2.jpg';
+// import Banner01 from '../assets/massage2.jpg';
 export default createGlobalStyle`
   *{
     margin:0;

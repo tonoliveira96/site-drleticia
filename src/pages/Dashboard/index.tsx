@@ -1,7 +1,5 @@
-import React, { useState, useEffect, FormEvent } from 'react';
-import { FiArrowRight, FiInstagram } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
-// import api from '../../services/api';
+import React from 'react';
+import {  FiInstagram } from 'react-icons/fi';
 
 import WhatsappLogo from '../../assets/whatsapp-logo.png';
 import Banner01 from '../../assets/image2.png';
@@ -25,13 +23,13 @@ const Dashboard: React.FC = () => {
         <a
           key="Whatssap"
           href="https://api.whatsapp.com/send?phone=553195862703"
-          target="_blank"
+          target="blank"
         >
           Entre em contato
-          <img src={WhatsappLogo} />
+          <img src={WhatsappLogo} alt="WhatsApp"/>
         </a>
         <ImgPerson>
-          <img src={Banner01} alt="" />
+          <img src={Banner01} alt="Banner" />
         </ImgPerson>
       </HeaderSite>
 
@@ -102,7 +100,7 @@ const Dashboard: React.FC = () => {
           <span>
             <a
               href="https://www.instagram.com/dra.leticia.rodrigues/"
-              target="_blank"
+              target="blank"
             >
               <FiInstagram size={48} />
               <p>Clique aqui e me siga no Instagram</p>
