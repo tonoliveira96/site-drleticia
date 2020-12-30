@@ -106,9 +106,7 @@ const Dashboard: React.FC = () => {
             >
               <FiInstagram size={48} />
               <p>Clique aqui e me siga no Instagram</p>
-
             </a>
-
           </span>
           <p>
             <b>Celular:</b> (31) 9586-2703

@@ -26,6 +26,7 @@ export const HeaderSite = styled.div`
   justify-content: center;
 
   a {
+    display: flex;
     padding: 10px;
     text-decoration: none;
     background: #04d361;
@@ -46,6 +47,7 @@ export const HeaderSite = styled.div`
     img {
       width: 24px;
       height: 24px;
+      margin-left: 8px;
     }
   }
 
@@ -73,13 +75,18 @@ export const ImgPerson = styled.div`
 `;
 
 export const AboutMe = styled.div`
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
+  padding: 12px 30px;
+
   h2 {
     color: #3a3a3a;
   }
 
   p {
+    max-width: 1024px;
     display: flex;
     padding: 10px 24px;
     font-size: 16px;
@@ -93,6 +100,10 @@ export const Skills = styled.div`
   justify-content: space-between;
 
   div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 16px;
     flex: 1;
     padding: 20px 10px 10px 10px;
@@ -100,7 +111,6 @@ export const Skills = styled.div`
     strong {
       font-size: 16px;
       text-align: center;
-      margin-left: 120px;
     }
 
     img {
@@ -135,14 +145,13 @@ export const Contact = styled.div`
   }
 
   div {
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-      a{
-        text-decoration: none;
-
-      }
+    a {
+      text-decoration: none;
+    }
 
     p {
       font-size: 18px;
