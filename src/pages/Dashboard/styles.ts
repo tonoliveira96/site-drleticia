@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
+import Banner01 from '../../assets/massage2.jpg';
+
 export const Title = styled.h1`
   display: flex;
   font-size: 42px;
@@ -24,9 +26,9 @@ export const HeaderSite = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(${Banner01}) no-repeat center top fixed;
 
-
-   a {
+  a {
     display: flex;
     padding: 10px;
     text-decoration: none;
@@ -68,8 +70,7 @@ export const ImgPerson = styled.div`
   display: flex;
   margin-left: auto;
   margin-top: auto;
-  padding-right: 24px;
-
+  padding-right: 30px;
   img {
     height: 300px;
   }
@@ -96,6 +97,7 @@ export const AboutMe = styled.div`
 
 export const Skills = styled.div`
   display: flex;
+  background: #f0f0f5;
   align-items: center;
   justify-content: space-between;
 
@@ -104,9 +106,12 @@ export const Skills = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: solid #ccc 1px;
+    border-radius: 5px;
     margin: 0 16px;
     flex: 1;
     padding: 20px 10px 10px 10px;
+    margin: 12px;
 
     strong {
       font-size: 16px;
@@ -114,12 +119,14 @@ export const Skills = styled.div`
     }
 
     img {
+      display: flex;
       margin-left: auto;
       margin-right: auto;
-      width: 300px;
-      height: 200px;
+      width: 350px;
+      height: 240px;
       margin: 10px;
       border-radius: 5px;
+
     }
 
     p {
@@ -165,7 +172,21 @@ export const Contact = styled.div`
     color: #fff;
     transition: color 0.2s;
   }
-  &hover {
+  &:hover {
     color: ${shade(0.8, '#fff')};
+  }
+`;
+
+export const Developer = styled.div`
+  padding-left: 30px;
+  padding-bottom: 12px;
+  background: #3a3a3a;
+  color: #fff;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+    color: #25fbe0;
+    font-weight: bold;
   }
 `;

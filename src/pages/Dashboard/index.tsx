@@ -13,6 +13,7 @@ import {
   ImgPerson,
   Contact,
   Skills,
+  Developer,
 } from './styles';
 
 const Dashboard: React.FC = () => {
@@ -61,11 +62,11 @@ const Dashboard: React.FC = () => {
       <AboutMe>
         <h2>Sobre mim</h2>
         <p>
-          É um fato estabelecido há muito tempo que um leitor se distrai com o
-          conteúdo legível de uma página ao examinar seu layout. O objetivo de
-          usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou
-          menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo
-          com que pareça um inglês legível.
+          Sou fisioterapeuta e meu foco de trabalho é tratamento de coluna. Meu
+          compromisso é proporcionar sempre ao meu paciente uma melhor qualidade
+          de vida, solucionando sua dor com o melhor atendimento que eu possa
+          oferecer. Meu lema será sempre ajudar o meu paciente a resolver o
+          problema que tanto lhe incomoda.
         </p>
       </AboutMe>
 
@@ -139,6 +140,14 @@ const Dashboard: React.FC = () => {
           </p>
         </div>
       </Contact>
+      <Developer>
+        <span>
+          Desenvolvido por{' '}
+          <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank">
+            Everton Oliveira
+          </a>{' '}
+        </span>{' '}
+      </Developer>
     </>
   );
 };

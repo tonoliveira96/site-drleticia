@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-// import Banner01 from '../assets/massage2.jpg';
+import Banner01 from '../assets/massage2.jpg';
 export default createGlobalStyle`
   *{
     margin:0;
@@ -9,7 +9,8 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #f0f0f5 /*url({Banner01}) */no-repeat center top fixed;
+    /* background: url(${Banner01}) no-repeat center top fixed; */
+    /* #f0f0f5  */
     -webkit-font-smoothing: antialiased;
   }
 
