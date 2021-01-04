@@ -1,5 +1,7 @@
 import React from 'react';
-import {  FiInstagram } from 'react-icons/fi';
+import { useSpring, animated } from 'react-spring';
+
+import { FiInstagram } from 'react-icons/fi';
 
 import WhatsappLogo from '../../assets/whatsapp-logo.png';
 import Banner01 from '../../assets/image2.png';
@@ -15,21 +17,44 @@ import {
 
 const Dashboard: React.FC = () => {
   //inicia a renderização em tela
+  const props = useSpring({
+    opacity: 1,
+    delay: 600,
+    transform: 'translateX(0)',
+    from: {
+      opacity: 0,
+      transform: 'translateX(-400px)',
+    },
+  });
+
+  const props2 = useSpring({
+    opacity: 1,
+    delay: 1000,
+    transform: 'translateX(0)',
+    from: {
+      opacity: 0,
+      transform: 'translateY(-400px)',
+    },
+  });
   return (
     <>
       <Title>Dra. Letícia Rodrigues </Title>
 
       <HeaderSite>
-        <a
+        <animated.a
+          style={props2}
           key="Whatssap"
           href="https://api.whatsapp.com/send?phone=553195862703"
           target="blank"
         >
           Entre em contato
-          <img src={WhatsappLogo} alt="WhatsApp"/>
-        </a>
+          <img src={WhatsappLogo} alt="WhatsApp" />
+        </animated.a>
+
         <ImgPerson>
-          <img src={Banner01} alt="Banner" />
+          <animated.div style={props}>
+            <img src={Banner01} alt="Banner" />
+          </animated.div>
         </ImgPerson>
       </HeaderSite>
 

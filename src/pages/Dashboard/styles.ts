@@ -25,7 +25,8 @@ export const HeaderSite = styled.div`
   align-items: center;
   justify-content: center;
 
-  a {
+
+   a {
     display: flex;
     padding: 10px;
     text-decoration: none;
@@ -88,7 +89,6 @@ export const AboutMe = styled.div`
   p {
     max-width: 1024px;
     display: flex;
-    padding: 10px 24px;
     font-size: 16px;
     text-align: justify;
   }
