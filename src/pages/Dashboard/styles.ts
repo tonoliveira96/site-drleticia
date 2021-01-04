@@ -110,9 +110,8 @@ export const Skills = styled.div`
     border-radius: 5px;
     margin: 0 16px;
     flex: 1;
-    padding: 20px 10px 10px 10px;
-    margin: 12px;
-
+    padding: 20px 2px 10px 2px;
+    margin: 10px;
     strong {
       font-size: 16px;
       text-align: center;
@@ -122,8 +121,8 @@ export const Skills = styled.div`
       display: flex;
       margin-left: auto;
       margin-right: auto;
-      width: 350px;
-      height: 240px;
+      width: 300px;
+      height: 200px;
       margin: 10px;
       border-radius: 5px;
 
