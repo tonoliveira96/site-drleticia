@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
+import Banner02 from '../../assets/massage2.jpg';
 
-import Banner01 from '../../assets/massage2.jpg';
 
 export const Title = styled.h1`
   display: flex;
@@ -24,7 +24,7 @@ export const WhatsAppButton = styled.div`
   display: flex;
   bottom: 0;
   right: 0;
-  padding-right: 96px;
+  padding-right: 92px;
   margin-bottom: 96px;
   position: fixed;
 
@@ -55,12 +55,17 @@ export const WhatsAppButton = styled.div`
 `;
 
 export const HeaderSite = styled.div`
+  display: flex;
   height: 500px;
   width: 100%;
-  display: flex;
+
   align-items: center;
   justify-content: center;
-  background: url(${Banner01}) no-repeat center top fixed;
+  background: url(${Banner02}) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   @media (max-width: 640px) {
     width: auto;
@@ -73,6 +78,7 @@ export const ImgPerson = styled.div`
   margin-left: auto;
   margin-top: auto;
   padding-right: 30px;
+
   img {
     height: 300px;
   }
@@ -151,7 +157,7 @@ export const Contact = styled.div`
   background: #3a3a3a;
 
   h2 {
-    margin-top: 8px;
+    margin: 10px 0;
     color: #fff;
   }
 

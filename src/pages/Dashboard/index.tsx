@@ -29,13 +29,14 @@ const Dashboard: React.FC = () => {
     },
   });
 
-  const props2 = useSpring({
+  const propsWhatappButton = useSpring({
     opacity: 1,
-    delay: 1000,
+    delay: 1500,
+    margin: 0,
     transform: 'translateX(0)',
     from: {
       opacity: 0,
-      transform: 'translateY(-400px)',
+      transform: 'translateX(400px)',
     },
   });
   return (
@@ -43,7 +44,7 @@ const Dashboard: React.FC = () => {
       <Title>Dra. Letícia Rodrigues </Title>
       <WhatsAppButton>
       <animated.a
-          style={props2}
+          style={propsWhatappButton}
           key="Whatssap"
           href="https://api.whatsapp.com/send?phone=553195862703"
           target="blank"
@@ -53,7 +54,6 @@ const Dashboard: React.FC = () => {
         </animated.a>
       </WhatsAppButton>
       <HeaderSite>
-
 
         <ImgPerson>
           <animated.div style={props}>
