@@ -20,24 +20,24 @@ export const Title = styled.h1`
   }
 `;
 
-export const HeaderSite = styled.div`
-  height: 500px;
-  width: 100%;
+export const WhatsAppButton = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(${Banner01}) no-repeat center top fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 96px;
+  margin-bottom: 96px;
+  position: fixed;
 
   a {
     display: flex;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
     background: #04d361;
     align-items: center;
     justify-content: center;
     position: absolute;
 
-    border-radius: 10px;
+    border-radius: 50%;
     border: 1px solid #f0f0f5;
     color: #fff;
     font-weight: bold;
@@ -48,21 +48,23 @@ export const HeaderSite = styled.div`
     }
 
     img {
-      width: 24px;
-      height: 24px;
-      margin-left: 8px;
+      width: 48px;
+      height: 48px;
     }
   }
+`;
+
+export const HeaderSite = styled.div`
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(${Banner01}) no-repeat center top fixed;
 
   @media (max-width: 640px) {
     width: auto;
     height: 500px;
-
-    a {
-      position: fixed;
-      bottom: 0;
-      margin-bottom: 24px;
-    }
   }
 `;
 
@@ -84,6 +86,7 @@ export const AboutMe = styled.div`
   padding: 12px 30px;
 
   h2 {
+
     color: #3a3a3a;
   }
 
@@ -121,11 +124,9 @@ export const Skills = styled.div`
       display: flex;
       margin-left: auto;
       margin-right: auto;
-      width: 300px;
-      height: 200px;
+      max-width: 300px;
       margin: 10px;
       border-radius: 5px;
-
     }
 
     p {
@@ -143,14 +144,20 @@ export const Skills = styled.div`
 `;
 
 export const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #3a3a3a;
-  height: 300px;
 
   h2 {
+    margin-top: 8px;
     color: #fff;
   }
 
   div {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -160,7 +167,7 @@ export const Contact = styled.div`
     }
 
     p {
-      font-size: 18px;
+      font-size: 16px;
       color: #f0f0f5;
       margin-top: 4px;
       padding: 5px;
@@ -169,10 +176,6 @@ export const Contact = styled.div`
   svg {
     margin-left: auto;
     color: #fff;
-    transition: color 0.2s;
-  }
-  &:hover {
-    color: ${shade(0.8, '#fff')};
   }
 `;
 

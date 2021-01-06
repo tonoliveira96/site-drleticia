@@ -8,6 +8,7 @@ import Banner01 from '../../assets/image2.png';
 
 import {
   Title,
+  WhatsAppButton,
   HeaderSite,
   AboutMe,
   ImgPerson,
@@ -40,17 +41,19 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Title>Dra. Letícia Rodrigues </Title>
-
-      <HeaderSite>
-        <animated.a
+      <WhatsAppButton>
+      <animated.a
           style={props2}
           key="Whatssap"
           href="https://api.whatsapp.com/send?phone=553195862703"
           target="blank"
         >
-          Entre em contato
+
           <img src={WhatsappLogo} alt="WhatsApp" />
         </animated.a>
+      </WhatsAppButton>
+      <HeaderSite>
+
 
         <ImgPerson>
           <animated.div style={props}>
