@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 import { useSpring, animated } from 'react-spring';
 
 import { FiInstagram } from 'react-icons/fi';
@@ -19,6 +21,11 @@ import {
 
 const Dashboard: React.FC = () => {
   //inicia a renderização em tela
+  useEffect(() => {
+    ReactGA.initialize('G-4D68VB71CJ');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   const props = useSpring({
     opacity: 1,
     delay: 600,
@@ -43,18 +50,16 @@ const Dashboard: React.FC = () => {
     <>
       <Title>Dra. Letícia Rodrigues </Title>
       <WhatsAppButton>
-      <animated.a
+        <animated.a
           style={propsWhatappButton}
           key="Whatssap"
           href="https://api.whatsapp.com/send?phone=553195862703"
           target="blank"
         >
-
           <img src={WhatsappLogo} alt="WhatsApp" />
         </animated.a>
       </WhatsAppButton>
       <HeaderSite>
-
         <ImgPerson>
           <animated.div style={props}>
             <img src={Banner01} alt="Banner" />
