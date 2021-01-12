@@ -1,5 +1,5 @@
 {
-  "name": "primeiro-projeto-react",
+  "name": "dra-leticia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,9 +15,11 @@
     "polished": "^3.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.3.0",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
     "styled-components": "^5.1.1",
     "typescript": "~3.7.2"
   },

@@ -1,48 +1,80 @@
-import React, { useState, useEffect, FormEvent } from 'react';
-import { FiArrowRight, FiInstagram } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
-// import api from '../../services/api';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
+import { useSpring, animated } from 'react-spring';
+
+import { FiInstagram } from 'react-icons/fi';
 
 import WhatsappLogo from '../../assets/whatsapp-logo.png';
 import Banner01 from '../../assets/image2.png';
 
 import {
   Title,
+  WhatsAppButton,
   HeaderSite,
   AboutMe,
   ImgPerson,
   Contact,
   Skills,
+  Developer,
 } from './styles';
 
 const Dashboard: React.FC = () => {
   //inicia a renderização em tela
+  useEffect(() => {
+    ReactGA.initialize('G-4D68VB71CJ');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+  const props = useSpring({
+    opacity: 1,
+    delay: 600,
+    transform: 'translateX(0)',
+    from: {
+      opacity: 0,
+      transform: 'translateX(-400px)',
+    },
+  });
+
+  const propsWhatappButton = useSpring({
+    opacity: 1,
+    delay: 1500,
+    margin: 0,
+    transform: 'translateX(0)',
+    from: {
+      opacity: 0,
+      transform: 'translateX(400px)',
+    },
+  });
   return (
     <>
       <Title>Dra. Letícia Rodrigues </Title>
-
-      <HeaderSite>
-        <a
+      <WhatsAppButton>
+        <animated.a
+          style={propsWhatappButton}
           key="Whatssap"
           href="https://api.whatsapp.com/send?phone=553195862703"
-          target="_blank"
+          target="blank"
         >
-          Entre em contato
-          <img src={WhatsappLogo} />
-        </a>
+          <img src={WhatsappLogo} alt="WhatsApp" />
+        </animated.a>
+      </WhatsAppButton>
+      <HeaderSite>
         <ImgPerson>
-          <img src={Banner01} alt="" />
+          <animated.div style={props}>
+            <img src={Banner01} alt="Banner" />
+          </animated.div>
         </ImgPerson>
       </HeaderSite>
 
       <AboutMe>
         <h2>Sobre mim</h2>
         <p>
-          É um fato estabelecido há muito tempo que um leitor se distrai com o
-          conteúdo legível de uma página ao examinar seu layout. O objetivo de
-          usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou
-          menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo
-          com que pareça um inglês legível.
+          Sou fisioterapeuta e meu foco de trabalho é tratamento de coluna. Meu
+          compromisso é proporcionar sempre ao meu paciente uma melhor qualidade
+          de vida, solucionando sua dor com o melhor atendimento que eu possa
+          oferecer. Meu lema será sempre ajudar o meu paciente a resolver o
+          problema que tanto lhe incomoda.
         </p>
       </AboutMe>
 
@@ -102,13 +134,11 @@ const Dashboard: React.FC = () => {
           <span>
             <a
               href="https://www.instagram.com/dra.leticia.rodrigues/"
-              target="_blank"
+              target="blank"
             >
               <FiInstagram size={48} />
               <p>Clique aqui e me siga no Instagram</p>
-
             </a>
-
           </span>
           <p>
             <b>Celular:</b> (31) 9586-2703
@@ -118,6 +148,14 @@ const Dashboard: React.FC = () => {
           </p>
         </div>
       </Contact>
+      <Developer>
+        <span>
+          Desenvolvido por{' '}
+          <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank">
+            Everton Oliveira
+          </a>{' '}
+        </span>{' '}
+      </Developer>
     </>
   );
 };
